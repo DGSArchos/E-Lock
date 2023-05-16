@@ -10,16 +10,49 @@ PORT = 80 #Le port 80 va etre le port utiliser pour créer le site Web
 ENABLE_PATH = '/magnet'
 HTML_TEMPLATE = """
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Control Panel</title>
+  <meta charset="UTF-8">
+  <title>Mon Site Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    
+    button {
+      display: block;
+      width: 200px;
+      height: 40px;
+      margin: 10px auto;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    <h1>Control Panel</h1>
-    <button onclick="window.location.href='/magnet?state=on'">Enable Magnet</button>
-    <button onclick="window.location.href='/magnet?state=off'">Disable Magnet</button>
+  <h1>Titre de mon site</h1>
+  
+  <button type="button">Bouton 1</button>
+  <button type="button">Bouton 2</button>
 </body>
 </html>
+
 """
 
 #--------------------------------------------------------------------------------------------------------------------------------------#
